@@ -1,5 +1,6 @@
 type Combinable = number | string;
 type ConversionDescriptor = 'as-number' | 'as-text';
+type User = {name: string; age: number};
 
 function combine(
     input1: Combinable,
@@ -28,3 +29,10 @@ console.log(combinedStringAges);
 
 const combinedNames = combine('Max', 'Anna', 'as-text');
 console.log(combinedNames);
+
+function checkAge(user: User, checkAge: number){
+    return `${user.name}: ${(user.age > checkAge).toString()}`;
+}
+
+console.log(checkAge({name: 'Alain', age: 20}, 20));
+

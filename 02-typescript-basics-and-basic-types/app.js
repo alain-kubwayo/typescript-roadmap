@@ -19,3 +19,7 @@ var combinedStringAges = combine('30', '26', 'as-number');
 console.log(combinedStringAges);
 var combinedNames = combine('Max', 'Anna', 'as-text');
 console.log(combinedNames);
+function checkAge(user, checkAge) {
+    return "".concat(user.name, ": ").concat((user.age > checkAge).toString());
+}
+console.log(checkAge({ name: 'Alain', age: 20 }, 20));
