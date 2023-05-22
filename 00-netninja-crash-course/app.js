@@ -70,3 +70,19 @@ ninjaTwo = {
     age: 27,
     beltColor: 'black',
 };
+// any type
+var year = 2012;
+year = true;
+year = 'hello world';
+year = { name: 'terry' };
+// console.log(year);
+var mixedArr = [];
+mixedArr.push('hello');
+mixedArr.push(23);
+mixedArr.push(true);
+mixedArr.push(['hello', 'world']);
+// console.log(mixedArr);
+var ninjaObj;
+ninjaObj = { name: 12, age: 'tomas' };
+ninjaObj = { name: 'tomas', age: 12 };
+// console.log(ninjaObj);
