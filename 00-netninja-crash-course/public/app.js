@@ -102,5 +102,6 @@ const add = (a, b, c = 19) => {
 // (c?: number | string) OR (c: number | string = 10) => always put your default/optional parameters at the end.
 add(10, 30, '30');
 const minus = (a, b) => a - b;
-// const result = minus(10, 7); // result is inferred to be a number
-// console.log(result);
+const logDetails = (uid, item) => console.log(`${item} has a uid of ${uid}`);
+const greetings = (user) => console.log(`${user.name} says hello`);
+const greetingsAgain = (user) => console.log(`${user.name} says hello once again`);

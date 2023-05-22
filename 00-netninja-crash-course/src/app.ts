@@ -146,3 +146,14 @@ const minus = (a: number, b: number) => a - b;
 
 // const result = minus(10, 7); // result is inferred to be a number
 // console.log(result);
+
+// Type Aliases
+
+type StringOrNum = string | number;
+type objWithName = { name: string; uid: StringOrNum; }
+
+const logDetails = (uid: StringOrNum, item: string) => console.log(`${item} has a uid of ${uid}`);
+
+const greetings = (user: objWithName) => console.log(`${user.name} says hello`);
+
+const greetingsAgain = (user: objWithName) => console.log(`${user.name} says hello once again`);
