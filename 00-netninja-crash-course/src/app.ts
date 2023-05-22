@@ -119,3 +119,4 @@ ninjaObj = { name: 12, age: 'tomas' };
 ninjaObj = { name: 'tomas' , age: 12 };
 
 // console.log(ninjaObj);
+
