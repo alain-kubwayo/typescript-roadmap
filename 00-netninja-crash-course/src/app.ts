@@ -69,7 +69,7 @@ let mixedArray: (string | number | boolean )[] = [];
 mixedArray.push('hello');
 mixedArray.push(23);
 mixedArray.push(false);
-console.log(mixedArray);
+// console.log(mixedArray);
 
 let uid: string|number;
 uid = 123;
@@ -120,3 +120,29 @@ ninjaObj = { name: 'tomas' , age: 12 };
 
 // console.log(ninjaObj);
 
+
+// Function Basics
+
+// let greet = () => {
+//     console.log('hello, world');
+// }
+
+let greet: Function;
+
+greet = () => {
+    console.log('hello, world');
+}
+
+const add = (a: number, b: number, c: number | string = 19) => {
+    console.log(a + b);
+    console.log(c);
+}
+
+// (c?: number | string) OR (c: number | string = 10) => always put your default/optional parameters at the end.
+
+add(10, 30, '30');
+
+const minus = (a: number, b: number) => a - b;
+
+// const result = minus(10, 7); // result is inferred to be a number
+// console.log(result);

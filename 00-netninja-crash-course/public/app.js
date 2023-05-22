@@ -54,7 +54,7 @@ let mixedArray = [];
 mixedArray.push('hello');
 mixedArray.push(23);
 mixedArray.push(false);
-console.log(mixedArray);
+// console.log(mixedArray);
 let uid;
 uid = 123;
 uid = '123';
@@ -87,3 +87,20 @@ let ninjaObj;
 ninjaObj = { name: 12, age: 'tomas' };
 ninjaObj = { name: 'tomas', age: 12 };
 // console.log(ninjaObj);
+// Function Basics
+// let greet = () => {
+//     console.log('hello, world');
+// }
+let greet;
+greet = () => {
+    console.log('hello, world');
+};
+const add = (a, b, c = 19) => {
+    console.log(a + b);
+    console.log(c);
+};
+// (c?: number | string) OR (c: number | string = 10) => always put your default/optional parameters at the end.
+add(10, 30, '30');
+const minus = (a, b) => a - b;
+// const result = minus(10, 7); // result is inferred to be a number
+// console.log(result);
