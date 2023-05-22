@@ -38,3 +38,35 @@ ninja = {
     belt: 'orange',
     age: 40
 };
+// explicit types
+var char;
+var yearOfPublication;
+var isLoggedIn;
+yearOfPublication = 2010;
+// isLoggedIn = 34; // won't work
+isLoggedIn = false;
+// arrays
+var ninjas = [];
+ninjas.push('hello');
+// union types
+var mixedArray = [];
+mixedArray.push('hello');
+mixedArray.push(23);
+mixedArray.push(false);
+console.log(mixedArray);
+var uid;
+uid = 123;
+uid = '123';
+// console.log(uid);
+// objects
+var ninjaOne;
+ninjaOne = {
+    name: 'yoshi',
+    age: 30
+};
+var ninjaTwo;
+ninjaTwo = {
+    name: 'mario',
+    age: 27,
+    beltColor: 'black',
+};

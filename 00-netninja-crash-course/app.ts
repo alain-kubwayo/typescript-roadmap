@@ -50,3 +50,47 @@ ninja = {
     belt: 'orange',
     age: 40
 }
+
+// explicit types
+let char: string;
+let yearOfPublication: number;
+let isLoggedIn: boolean;
+
+yearOfPublication = 2010;
+// isLoggedIn = 34; // won't work
+isLoggedIn = false;
+
+// arrays
+let ninjas: string[] = [];
+ninjas.push('hello');
+
+// union types
+let mixedArray: (string | number | boolean )[] = [];
+mixedArray.push('hello');
+mixedArray.push(23);
+mixedArray.push(false);
+console.log(mixedArray);
+
+let uid: string|number;
+uid = 123;
+uid = '123';
+// console.log(uid);
+
+// objects
+let ninjaOne: object;
+ninjaOne = {
+    name: 'yoshi',
+    age: 30
+}
+
+let ninjaTwo: {
+    name: string;
+    age: number;
+    beltColor: string;
+};
+
+ninjaTwo = {
+    name: 'mario',
+    age: 27,
+    beltColor: 'black',
+}
