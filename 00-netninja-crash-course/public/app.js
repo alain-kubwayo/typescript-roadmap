@@ -105,3 +105,23 @@ const minus = (a, b) => a - b;
 const logDetails = (uid, item) => console.log(`${item} has a uid of ${uid}`);
 const greetings = (user) => console.log(`${user.name} says hello`);
 const greetingsAgain = (user) => console.log(`${user.name} says hello once again`);
+// Function Signatures
+// let salute: Function;
+// example 1
+let salute;
+salute = (name, greeting) => {
+    console.log(`${name} says ${greeting}`);
+};
+// example 2
+let calc;
+calc = (numOne, numTwo, action) => {
+    if (action === 'add')
+        return numOne + numTwo;
+    else
+        return numOne - numTwo;
+};
+let logSomeDetails;
+logSomeDetails = (ninja) => {
+    console.log(`${ninja.name} is ${ninja.age} years old.`);
+};
+// logSomeDetails({name: 'alain', age: 24});

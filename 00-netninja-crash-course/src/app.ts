@@ -157,3 +157,30 @@ const logDetails = (uid: StringOrNum, item: string) => console.log(`${item} has 
 const greetings = (user: objWithName) => console.log(`${user.name} says hello`);
 
 const greetingsAgain = (user: objWithName) => console.log(`${user.name} says hello once again`);
+
+// Function Signatures
+
+// let salute: Function;
+
+// example 1
+let salute: (a: string, b: string) => void;
+salute = (name: string, greeting: string) => {
+    console.log(`${name} says ${greeting}`);
+}
+
+// example 2
+let calc: (a: number, b: number, c: string) => number;
+
+calc = (numOne: number, numTwo: number, action: string) => {
+    if(action === 'add') return numOne + numTwo;
+    else return numOne - numTwo;
+}
+
+// example 3
+type Person = {name: string, age: number;}
+let logSomeDetails: (obj: Person) => void;
+logSomeDetails = (ninja: Person) => {
+    console.log(`${ninja.name} is ${ninja.age} years old.`);
+}
+
+// logSomeDetails({name: 'alain', age: 24});
